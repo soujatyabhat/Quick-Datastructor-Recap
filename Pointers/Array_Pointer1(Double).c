@@ -18,7 +18,8 @@ void main()
 	{
 		for (j = 0; j <m; j++)
 		{
-			printf("%d ",*(ptr + i));
+			printf("%d ",*(ptr + i * m + j));
 		}
+		printf("\n");
 	}
 }
