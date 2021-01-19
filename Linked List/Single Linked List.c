@@ -5,7 +5,7 @@
 struct node 
 {
 	int roll;
-	char name[10];
+	char name[5];
 	double marks;
 	struct node *next;
 };
@@ -14,7 +14,7 @@ struct node  *root = NULL;
 
 int roll;
 float marks;
-char name[20];
+char name[5];
 	
 void addData()
 {
@@ -165,6 +165,8 @@ void display()
 		printf("Roll: %d\n",tmp->roll);
 		printf("Name : %s\n",tmp->name);
 		printf("Marks : %.2f\n\n",tmp->marks);
+		
+		printf("Memory : %x\n",sizeof(struct node));
 		tmp = tmp->next;
 		
 	}
